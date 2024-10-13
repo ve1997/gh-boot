@@ -53,8 +53,8 @@ func bootApp() {
 		fmt.Printf("\n🚀 \x1b[90m> \x1b[1mnpx create-next-app@latest %s --use-%s --ts --app --tailwind --no-eslint --no-src-dir --no-import-alias\x1b[0m\n\n", projectName, packageManager)
 		runCommand("npx", "create-next-app@latest", projectName, "--use-"+packageManager, "--ts", "--app", "--tailwind", "--no-eslint", "--no-src-dir", "--no-import-alias")
 	case "nextjs@canary":
-		fmt.Printf("\n🚀 \x1b[90m> \x1b[1mnpx create-next-app@canary %s --use-%s --ts --app --tailwind --no-eslint --no-src-dir --no-import-alias\x1b[0m\n\n", projectName, packageManager)
-		runCommand("npx", "create-next-app@canary", projectName, "--use-"+packageManager, "--ts", "--app", "--tailwind", "--no-eslint", "--no-src-dir", "--no-import-alias")
+		fmt.Printf("\n🚀 \x1b[90m> \x1b[1mnpx create-next-app@canary %s --use-%s --ts --app --tailwind --no-eslint --no-src-dir --no-import-alias --turbo\x1b[0m\n\n", projectName, packageManager)
+		runCommand("npx", "create-next-app@canary", projectName, "--use-"+packageManager, "--ts", "--app", "--tailwind", "--no-eslint", "--no-src-dir", "--no-import-alias", "--turbo")
 	case "react":
 		fmt.Printf("\n🚀 \x1b[90m> \x1b[1m%s create vite@latest %s --template react-ts\x1b[0m\n", packageManager, projectName)
 		runCommand(packageManager, "create", "vite@latest", projectName, "--template", "react-ts")
